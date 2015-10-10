@@ -1,4 +1,4 @@
-# JavaScript Snippets for Sublime [![Build Status](https://travis-ci.org/imweb/sublime-js-snippets.svg?branch=master)](https://travis-ci.org/imweb/sublime-js-snippets)
+# JavaScript Snippets for Sublime
 
 ## Install
 
