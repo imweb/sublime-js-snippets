@@ -1,0 +1,17 @@
+{
+	"name": "sublime-js-snippets",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/imweb/sublime-js-snippets.git"
+	},
+	"devDependencies": {
+		"grunt": "0.4.2",
+		"grunt-bump": "0.0.13",
+		"grunt-cli": "0.1.11",
+		"grunt-lintspaces": "0.3.1"
+	},
+	"scripts": {
+		"test": "grunt"
+	}
+}
