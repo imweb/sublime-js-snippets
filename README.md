@@ -1,5 +1,9 @@
 # JavaScript Snippets for Sublime
 
+## description
+
+This is a JavaScript Snippets package for [IMWeb team](https://github.com/imweb), it unifies the js snippets for IMWeb team.
+
 ## Install
 
 To install through [Package Control](http://wbond.net/sublime_packages/package_control),
