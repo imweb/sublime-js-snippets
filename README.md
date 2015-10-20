@@ -59,7 +59,6 @@ console.log(${1:obj});
 ${1:myArray}.forEach(function(${2:elem}, ${3:index}) {
     ${4}
 });
-
 ```
 
 ### [fi] for...in
@@ -274,7 +273,7 @@ require.async(['${1:moduleName}'], function(${2:module}) {
 });
 ```
 
-### [me]
+### [me] module.exports
 
 ```javascript
 module.exports = {${1}};
