@@ -2,7 +2,7 @@
 
 ## description
 
-This is a JavaScript Snippets package for [IMWeb team](https://github.com/imweb), it unifies the js snippets for IMWeb team.
+This is a JavaScript Snippets package for [IMWeb team](https://github.com/imweb), it unifies the js snippets for IMWeb team.<br>
 The snippets of this package make a standard list in [Code Guide of IMWeb team](http://imweb.github.io/CodeGuide/#snippets)
 
 ## Install
