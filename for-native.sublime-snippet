@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+for (var ${1:i} = ${2:0}, ${3:l} = ${4:arr}.length; ${1:i} < ${3:l}; ++${1:i}) {
+    ${5}
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>fo</tabTrigger>
+  <description>for</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js, keyword.control.js</scope>
+</snippet>

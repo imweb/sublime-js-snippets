@@ -1,0 +1,11 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+\$${1:doc}.trigger('${2:eventType}'${3});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jtri</tabTrigger>
+  <description>$.trigger</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js, keyword.operator.js</scope>
+</snippet>

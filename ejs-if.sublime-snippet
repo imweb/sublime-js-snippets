@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<% if(${1:expr}) { %>
+    ${2}
+<% } %>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>=if</tabTrigger>
+  <description>&lt;%if%&gt;</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.basic, source.ruby.embedded.html, punctuation.section.embedded.ruby</scope>
+</snippet>
