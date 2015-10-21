@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-${1:functionName}.call(${2:context}, ${3:arguments});
+call(${1:context}, ${2:arguments});
 ]]></content>
-	<tabTrigger>call</tabTrigger>
+	<tabTrigger>ca</tabTrigger>
 	<scope>source.js</scope>
 	<description>method.call()</description>
 </snippet>

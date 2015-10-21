@@ -71,7 +71,7 @@ for (${1:prop} in ${2:obj}) {
 }
 ```
 
-### [fo] for
+### [for] for
 
 ```javascript
 for (var ${1:i} = ${2:0}, ${3:l} = ${4:arr}.length; ${1:i} < ${3:l}; ++${1:i}) {
@@ -81,7 +81,7 @@ for (var ${1:i} = ${2:0}, ${3:l} = ${4:arr}.length; ${1:i} < ${3:l}; ++${1:i}) {
 
 ## Function
 
-### [fn] function
+### [fn][fun] function
 
 ```javascript
 function ${1:functionName}(${2:arguments}) {
@@ -97,16 +97,16 @@ function(${1:arguments}) {
 }
 ```
 
-### [apply] apply
+### [ap] apply
 
 ```javascript
-${1:functionName}.apply(${2:context}, [${3:arguments}]);
+apply(${1:context}, [${2:arguments}]);
 ```
 
-### [call] call
+### [ca] call
 
 ```javascript
-${1:functionName}.call(${2:context}, ${3:arguments});
+call(${1:context}, ${2:arguments});
 ```
 
 ### [iif] immediately-invoked function expression
@@ -139,22 +139,28 @@ if (${1:expr}) {
 
 ## Jquery
 
-### [jvt] get $this
+### [jvt] var $this = $(this)
 
 ```javascript
 var \$this = \$(this);
 ```
 
-### [jve] get jquery element
+### [jve] var $var = $('var')
 
 ```javascript
 var \$${1} = \$('${2}');
 ```
 
-### [jvd] get data
+### [jvd] var d = $d.data('d')
 
 ```javascript
 var ${1:cid} = \$${2:this}.data('${3:cid}');
+```
+
+### [da] data()
+
+```javascript
+data('${1}')
 ```
 
 ### [jext] $.extend
@@ -163,10 +169,22 @@ var ${1:cid} = \$${2:this}.data('${3:cid}');
 \$.extend(${1});
 ```
 
+### [ext] extend()
+
+```javascript
+extend(${1})
+```
+
 ### [jat] $.attr
 
 ```javascript
 \$${1:this}.attr('${2}'${3});
+```
+
+### [at] attr()
+
+```javascript
+attr('${1}'${2})
 ```
 
 ### [jcss] $.css
@@ -175,10 +193,22 @@ var ${1:cid} = \$${2:this}.data('${3:cid}');
 \$${1:this}.css({${2}});
 ```
 
+### [css] css()
+
+```javascript
+css({${2}})
+```
+
 ### [jwi] $.width
 
 ```javascript
 \$${1:this}.width(${2});
+```
+
+### [wi] width()
+
+```javascript
+width(${1})
 ```
 
 ### [jhe] $.height
@@ -187,10 +217,22 @@ var ${1:cid} = \$${2:this}.data('${3:cid}');
 \$${1:this}.height(${2});
 ```
 
+### [he] height()
+
+```javascript
+height(${1})
+```
+
 ### [jsh] $.show
 
 ```javascript
 \$${1:this}.show();
+```
+
+### [sh] show()
+
+```javascript
+show()
 ```
 
 ### [jhi] $.hide
@@ -199,16 +241,34 @@ var ${1:cid} = \$${2:this}.data('${3:cid}');
 \$${1:this}.hide();
 ```
 
+### [hi] hide()
+
+```javascript
+hide()
+```
+
 ### [jac] $.addClass
 
 ```javascript
 \$${1:this}.addClass('${2}');
 ```
 
+### [addC] addClass()
+
+```javascript
+addClass('${1}')
+```
+
 ### [jrc] $.removeClass
 
 ```javascript
 \$${1:this}.removeClass('${2}');
+```
+
+### [rem] removeClass()
+
+```javascript
+removeClass('${1}')
 ```
 
 ### [jon] $.on
@@ -219,18 +279,44 @@ var ${1:cid} = \$${2:this}.data('${3:cid}');
 });
 ```
 
+### [on] on()
+
+```javascript
+on('${1:click}', ${2}function(e${3}) {
+    ${4:// body...}
+});
+```
+
 ### [jtri] $.trigger
 
 ```javascript
 \$${1:doc}.trigger('${2:eventType}'${3});
 ```
 
+### [tri] trigger()
+
+```javascript
+trigger('${1:eventType}'${2});
+```
+
 ## MISC
 
-### [vs] save context
+### [vs] var self = this
 
 ```javascript
 var ${1:self} = this;
+```
+
+### [se] self = this
+
+```javascript
+self = this;
+```
+
+### [th] that = this
+
+```javascript
+that = this;
 ```
 
 ### [al] alert
@@ -281,7 +367,7 @@ module.exports = {${1}};
 
 ## Timer
 
-### [st] setTimeout
+### [st][setT] setTimeout
 
 ```javascript
 setTimeout(function() {
@@ -289,7 +375,7 @@ setTimeout(function() {
 }, ${1:delay});
 ```
 
-### [si] setInterval
+### [si][setI] setInterval
 
 ```javascript
 setInterval(function() {
