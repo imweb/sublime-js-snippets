@@ -145,16 +145,34 @@ if (${1:expr}) {
 var \$this = \$(this);
 ```
 
+### [jct] const $this = $(this)
+
+```javascript
+const \$this = \$(this);
+```
+
 ### [jve] var $var = $('var')
 
 ```javascript
 var \$${1} = \$('${2}');
 ```
 
+### [jce] const $var = $('var')
+
+```javascript
+const \$${1} = \$('${2}');
+```
+
 ### [jvd] var d = $d.data('d')
 
 ```javascript
 var ${1:cid} = \$${2:this}.data('${3:cid}');
+```
+
+### [jcd] const d = $d.data('d')
+
+```javascript
+const ${1:cid} = \$${2:this}.data('${3:cid}');
 ```
 
 ### [da] data()
@@ -305,6 +323,12 @@ trigger('${1:eventType}'${2});
 
 ```javascript
 var ${1:self} = this;
+```
+
+### [cs] const self = this
+
+```javascript
+const ${1:self} = this;
 ```
 
 ### [se] self = this
